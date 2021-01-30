@@ -20,7 +20,6 @@ class IndecisionApp extends React.Component {
     alert(
       this.state.options[Math.floor(Math.random() * this.state.options.length)]
     );
-    // let blue = "hello";
   }
 
   render() {

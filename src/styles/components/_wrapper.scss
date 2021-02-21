@@ -5,10 +5,12 @@
   box-shadow: $box-shadow-small;
   display: grid;
   align-items: center;
+  justify-content: center;
   background-color: #d0eaf8;
+  text-align: center;
 
-  margin: 0 auto;
-  grid-template-rows: 20% auto auto 20% auto;
+  margin: auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 23rem 1fr;
 
   @media only screen and (max-width: $bp-largest) {

@@ -10,13 +10,13 @@ const items = [
 export default class Sidebar extends React.Component {
   render() {
     return (
-      <div className="sidebar" id="sidebar">
+      <div className={this.props.myClass} id="sidebar">
         <div className="sidebar-list">
           <SidebarItem
             title="Fun"
             icon="./images/sprite2.svg#joystick"
             name="NEW: Text Mazes"
-            url="text-maze.html"
+            url="/text-maze"
             name2="Questions Maze"
             url2="questions-maze.html"
             name3="'To Be' Maze"

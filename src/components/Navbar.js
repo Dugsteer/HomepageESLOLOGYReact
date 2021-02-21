@@ -4,11 +4,12 @@ export default class Navbar extends React.Component {
   state = {
     title: undefined,
   };
-  render() {
+
+  render(props) {
     return (
       <div>
         <div className="nav-bar" id="navbar">
-          <a href="index.html" className="nav-bar__logo">
+          <a href="/" className="nav-bar__logo">
             <svg className="icon-header nav-bar__logo-img">
               <use
                 xlinkHref="./images/sprite2.svg#Buho"
@@ -21,14 +22,14 @@ export default class Navbar extends React.Component {
             <span className="nav-bar__title-page-main" id="pageTitle"></span>
           </div>
           <div className="nav-bar__links">
-            <a href="index.html" className="nav-bar__link link3">
+            <a href="/" className="nav-bar__link link3">
               Home
             </a>
             <svg
               viewBox="0 0 100 80"
               width="40"
               height="20"
-              //   onClick=toggler();
+              onClick={this.props.toggle}
               id="menu"
               className="menu"
             >
